@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Assessment</title>
+    <style>
+       
+       p{
+            font-size: 20px;
+        }
+
+        .container{
+            background-color: white;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .MARK{
+            background-color: orange;
+            padding: 1%;
+            text-align: left;
+            font-size: 20px;
+            border-radius: 15px;
+
+        }
+
+       .AZURE{
+            width: 15%;
+        }
+       .AWS{
+            width: 50%;
+        }
+       .JAVASCRIPT{
+            width: 75%;
+        }
+
+        .ANGULAR{
+            width: 90%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--PROGRESS BAR WITH HTML & CSS, RANGE=0-100%-->
+    <h1>Progress Bar</h1>
+      
+    <p>AZURE</p>
+    <div class="container">
+        <div width="15%" class="AZURE MARK">15% </div>
+      
+    <p>AWS</p>
+    <div class="container">
+        <div width="50%" class="AWS MARK">50% </div>
+      
+    <p>JAVASCRIPT</p>
+    <div class="container">
+        <div width="75%" class="JAVASCRIPT MARK">75% </div>
+    <p>ANGULAR</p>
+    <div class="container">
+        <div width="90%" class="ANGULAR MARK">90%</div>
+    </div>
+    </div>
+ <script>
+     warnTheDeveloper(n,m,s)
+     {
+         let steps=s+(m-1);
+         let overflowCount=steps/n;
+         let developerToWarn=steps-(n*overflowCount);
+         return developerToWarn;
+
+     }
+ </script>   
+</body>
+</html>
